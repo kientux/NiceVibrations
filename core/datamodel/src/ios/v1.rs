@@ -41,8 +41,14 @@ impl Ahap {
     pub fn into_continuous_and_transients_ahaps(self) -> (Ahap, Option<Ahap>) {
         let ahap_version = 1.0;
 
-        let mut ahap_transients = Ahap { version: ahap_version, ..Default::default() };
-        let mut ahap_continuous = Ahap { version: ahap_version, ..Default::default() };
+        let mut ahap_transients = Ahap {
+            version: ahap_version,
+            ..Default::default()
+        };
+        let mut ahap_continuous = Ahap {
+            version: ahap_version,
+            ..Default::default()
+        };
 
         for pattern in self.pattern {
             match pattern {

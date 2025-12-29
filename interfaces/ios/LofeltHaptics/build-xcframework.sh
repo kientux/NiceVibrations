@@ -42,7 +42,6 @@ xcodebuild clean archive \
   -configuration Release \
   -sdk iphoneos \
   -derivedDataPath derived_data \
-  ENABLE_BITCODE=YES \
   BITCODE_GENERATION_MODE=bitcode \
   SKIP_INSTALL=NO \
   BUILD_LIBRARIES_FOR_DISTRIBUTION=YES \
